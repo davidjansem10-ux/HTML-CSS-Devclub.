@@ -1,0 +1,82 @@
+
+/*
+PSEUDO-CLASSES PT2
+:active- quando o elemento está ativo, ou seja, está sendo pressionado.
+:visited- seleciona o link que foi visitado, ou seja,quando o elemento foi visitado.
+:hover- quando o mouse passa por cima do elemento.
+:checked- usado em radio | checkbox | select
+:disabled- elemento desabilitado | button | input
+:enabled- elemento habilitado | button | input
+:focus- quando o elemento está em foco, ou seja, quando o elemento é selecionado
+:read-only- quando o elemento é somente leitura, ou seja, não pode ser editado.
+:empty- quando o elemento não possui conteúdo, ou seja, está vazio. (não tem filho)
+
+:first-child- primeiro filho | ex: primeira li de uma ul | primeiro span de uma div
+:first-of-type- primeiro elemento do tipo entre os filhos de seu elemento pai
+:last-child- último filho
+:last-of-type- último elemento do tipo entre os filhos de seu elemento pai
+:not() estiliza os elementos que não correspondem ao seletor especificado ()
+:nth-child() seleciona o elemento baseado na sua posição. EX: nth-child(3).
+:nth-last-child() seleciona o elemento baseado na sua posição. contando de tras para frente EX: nth-last-child(3). 
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:active {
+    color:  red;
+}
+
+a:visited {
+    color:  rgb(106, 0, 148);
+}
+
+.link-normal:hover {
+    color:  green
+}
+
+p {
+    color:  blue;
+}
+   
+p:hover {
+    color:  rgb(0, 131, 7);
+}
+
+input:checked {
+    width: 50px;
+    height: 50px;
+}
+
+input:disabled {
+    background-color:  red;
+    width: 50px;
+    height: 50px;
+}
+
+.button:focus {
+   border: 2px solid red;
+    outline: none;
+}
+
+.button:read-only {
+   border: 2px solid #45009e;
+    outline: none;
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    background-color: red
+}
+
+.container:empty {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(63, 22, 173)
+}
+

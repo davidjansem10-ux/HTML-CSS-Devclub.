@@ -1,0 +1,58 @@
+/*
+PSEUDO-CLASSES PT2
+:active- quando o elemento está ativo, ou seja, está sendo pressionado.
+:visited- seleciona o link que foi visitado, ou seja,quando o elemento foi visitado.
+:hover- quando o mouse passa por cima do elemento.
+:checked- usado em radio | checkbox | select
+:disabled- elemento desabilitado | button | input
+:enabled- elemento habilitado | button | input
+:focus- quando o elemento está em foco, ou seja, quando o elemento é selecionado
+:read-only- quando o elemento é somente leitura, ou seja, não pode ser editado.
+:empty- quando o elemento não possui conteúdo, ou seja, está vazio. (não tem filho)
+
+:first-child- primeiro filho | ex: primeira li de uma ul | primeiro span de uma div
+:first-of-type- primeiro elemento do tipo entre os filhos de seu elemento pai
+:last-child- último filho
+:last-of-type- último elemento do tipo entre os filhos de seu elemento pai
+:not() estiliza os elementos que não correspondem ao seletor especificado ()
+:nth-child() seleciona o elemento baseado na sua posição. EX: nth-child(3).
+:nth-last-child() seleciona o elemento baseado na sua posição. contando de tras para frente EX: nth-last-child(3). 
+
+*/
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    li:first-child {
+        color:  red;
+    }
+
+    span:first-of-type {
+        color:  rgb(221, 4, 124)
+    }
+
+    p:first-of-type {
+        color:  rgb(221, 4, 124)
+    }
+
+    li:last-child {
+        color:  rgb(0, 131, 7);
+    }
+
+    .container:not(.excluido) {
+        color:   red;
+    }
+
+    p:nth-child(2) {
+        color:  rgb(167, 137, 7);
+    }
+
+    p:nth-last-child(2) {
+        color:  rgb(167, 137, 7);
+    }
+
+    /* caso as pseudos classes me confunda, 
+    eu posso usar classes.........*/

@@ -1,0 +1,49 @@
+
+/* Pseudo elemento: sõa formas de estilizat pequenas partes de um elemento, sem a necessidade de criar uma nova tag HTML.
+Eles são representados por dois pontos (::) seguidos do nome do pseudo elemento. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    font-size: 20px;
+    border: 1px solid red;
+    color:rgb(170, 0, 170);
+    
+}
+
+input::placeholder{
+    color: rgb(170, 0, 170);
+
+}
+
+p {
+    color: rgb(13, 138, 211);
+    font-size: 50px;
+    
+}
+
+p::first-letter {
+    color: rgb(44, 207, 3);
+}
+
+p::first-line {
+    color: rgb(255, 0, 0);
+}
+
+a {
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+
+}
+a::before {
+    content: "👍";
+
+}   
+
+a::after {
+    content: "🐱‍🏍";
+}

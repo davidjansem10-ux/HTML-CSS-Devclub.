@@ -1,0 +1,36 @@
+
+
+.box  {
+  background-color: rgb(36, 0, 119);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.box-2  {
+  background-color: rgb(224, 0, 0);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.box-3  {
+  background-color: rgb(4, 107, 0);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+
+}   
+
+  /* DISPLAY-BLOCK: define o tipo de exibição padrão para elementos
+  de bloco, ou seja, eles ocupam toda a largura disponível 
+  e começam em uma nova linha. */
+ 
+   /* DISPLAY-INLINE: ele exibe o elemento na mesma linha, 
+  mas respeitando as propriedades de bloco */
+
+
+   /* DISPLAY-INLINE-BLOCK: é a junção dos 2 tipos anteriores, 
+  ou seja, o elemento é exibido na mesma linha, 
+  mas respeitando as propriedades de bloco, 
+  e também possui as propriedades de como altura e largura. */  

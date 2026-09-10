@@ -1,0 +1,38 @@
+
+/* Responsividade 
+
+All: para todos os dispositivos
+Braille: para dispositivos tateis braille
+Embossed: para dispositivos de relevo, imprimi braile
+handheld: para dispositivos portateis, telas pequenas e banda limitada
+print: para impressoras ( para marcas d'agua, cores, etc)
+projection: para projetores
+screen: para monitores ou dispositivos, com telas coloridas e resolução alta
+speech: para leitores de tela, sintetizadores de voz
+
+orientação:
+portrait: para telas verticais ( altura maior que largura)
+landscape: para telas horizontais ( largura maior que altura)
+
+*/
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    }
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    div {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+    }
+}

@@ -1,0 +1,35 @@
+<!-- a tag form serve para criar um formulário-->
+
+<form action="" method="get" enctype="multipart/form-data"> 
+    <h2> Digite seu Endereço </h2>
+    <label>
+        Rua:
+    <input type="text" name="rua" autocomplete="street-address"/>
+    </label>
+
+    <label>
+        Numero:
+    <input type="number" name="Numero"/>
+    </label>
+
+    <label>
+        Email:
+    <input type="email" name="email"/>
+    </label>
+    <br>
+    <br>
+    
+    <label>
+        foto:
+    <input type="file" name="arquivo"/>
+    </label>
+    <br>
+    <br>
+
+    <button type="submit">Enviar Dados</button>
+    <button type="reset">Limpar Dados</button>
+</form>
+
+    <!-- a função enctype="multipart/form-data" 
+    serve para fazer o upload de arquivos" e faz com que o servidor 
+    aceite arquivos-->

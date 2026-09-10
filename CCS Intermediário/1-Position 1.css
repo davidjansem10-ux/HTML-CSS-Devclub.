@@ -1,0 +1,43 @@
+/* VAMOS FALAR DE POSITION
+
+position: static; (PÁDRÃO) -  NÃO ACEITA VALORES DE TOP, BOTTOM, LEFT E RIGHT
+position fixed - FIXO NA TELA, NÃO SE MOVE COM O SCROLL
+positon: sticky; - FIXO NA TELA COMO ADESIVO, FIXA O ELEMENTO APENAS OPNDE EU DETERMINAR, VALORES DE TOP, BOTTOM, LEFT E RIGHT
+position: relative; - POSICIONA RELATIVO AO SEU PRÓPRIO ELEMENTO, ACEITA VALORES DE TOP, BOTTOM, LEFT E RIGHT  
+position: absolute; - POSICIONA RELATIVO AO SEU ELEMENTO PAI, ACEITA VALORES DE TOP, BOTTOM, LEFT E RIGHT  
+
+            SE NÃO ESTIVER O PAI / PAI STATIC (PADRÃO) - POSICIONA REFERENTE A PAGINA
+            SE O PAI NÃO FOR STATIC - POSICIONA REFERENTE AO PAI
+            
+            
+            */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh;
+    width: 200vw;
+}            
+
+.div-pai {
+    background-color: #e90101;
+    width: 300px;
+    height: 300px;
+
+}
+
+.div-filho {
+    background-color: #01e9e9;
+    width: 100px;
+    height: 100px;
+
+}
+
+.div-individual {
+    background-color: #e9e901;
+    width: 100px;
+    height: 100px;
+
+}
